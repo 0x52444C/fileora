@@ -4,32 +4,202 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fileora Privacy Policy</title>
-<link rel="canonical" href="https://nova-net.work/privacy">
-<meta http-equiv="refresh" content="0; url=https://nova-net.work/privacy">
-<meta name="robots" content="noindex">
+<link rel="canonical" href="https://0x52444c.github.io/fileora/">
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
          max-width: 680px; margin: 2.5rem auto; padding: 0 1.25rem; line-height: 1.55; color: #1a1a1a; }
   h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
   .updated { color: #666; font-size: 0.9rem; margin-bottom: 2rem; }
+  h2 { font-size: 1.1rem; margin-top: 2rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin-bottom: 0.35rem; }
   a { color: #0a66c2; }
-  .go { font-size: 1.15rem; font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.92rem; margin: 0.75rem 0; }
+  th, td { border: 1px solid #ddd; padding: 0.4rem 0.5rem; text-align: left; vertical-align: top; }
+  th { background: #f5f5f5; }
+  .wrap { overflow-x: auto; }
 </style>
 </head>
 <body>
 <h1>Fileora Privacy Policy</h1>
-<p class="updated">Last updated: November 11, 2026</p>
+<p class="updated">Effective date: November 12, 2026</p>
 
-<p>The privacy policy of Fileora has moved. It is now part of the NOVA NETWORK privacy page, which covers
-the Fileora and NX3DX+ apps and the website:</p>
+<p>This policy explains what the Fileora app (iPhone, iPad and Android) collects, why, how long it is kept,
+and how you can delete it. Fileora's online features are provided by the NOVA NETWORK service; where Fileora
+sends data, it sends it to NOVA NETWORK, and this page describes all of it.</p>
 
-<p class="go"><a href="https://nova-net.work/privacy">https://nova-net.work/privacy</a></p>
+<h2>Summary</h2>
+<ul>
+  <li>Fileora playing <strong>your own imported data</strong> uses no account and sends no personal data.</li>
+  <li>Fileora playing <strong>NOVA NETWORK data</strong> registers the install with NOVA NETWORK and, once you link
+  it to your NOVA account, keeps your results, ghosts and cloud saves with that account.</li>
+  <li>Optional telemetry (session starts and frame times) is sent only after you say yes, and can be switched
+  off at any time; switching it off deletes what that install sent before.</li>
+  <li>No advertising, no tracking, no advertising identifier, no third-party SDKs, and no data is sold or
+  given to anyone else.</li>
+  <li>You can delete your NOVA account and its data from inside the app.</li>
+</ul>
 
-<p>You should be taken there automatically. If not, follow the link above.</p>
+<h2>Two ways to use Fileora</h2>
+<p>When it starts, Fileora checks which data it is playing.</p>
+<p><strong>Your own data.</strong> You supply previously converted game data yourself, by picking a folder on
+your device or by downloading it from an address on your own network that you type in. That transfer happens
+between your own devices and never reaches us. In this mode there is no account, no identifier and no
+connection to NOVA NETWORK's API. The only request the app makes on its own is to fetch one public status file
+from our file host at launch and once a day; it carries no identifier, no token and no content, and the host
+sees only what any web request shows (the network address and the app's name and version). Versus over your
+own Wi-Fi or Bluetooth goes directly from device to device: your player name and car go to the other player's
+device, and nothing reaches us.</p>
+<p><strong>NOVA NETWORK data.</strong> If the data folder is a NOVA NETWORK set, the online features below are
+available and the app talks to NOVA NETWORK as described in the rest of this policy.</p>
 
-<p>The text that used to be on this page described only Fileora playing data you imported yourself. It no
-longer described the app as a whole and has been withdrawn; the page linked above is the one that applies.
-To delete an account and its data, see
-<a href="https://nova-net.work/account/delete">https://nova-net.work/account/delete</a>.</p>
+<h2>What Fileora sends in NOVA NETWORK mode</h2>
+
+<p><strong>Registration (always, needed for the app to work).</strong> The first time a NOVA feature is used,
+the app registers itself and sends:</p>
+<ul>
+  <li>a random install id made by the app (not an advertising id; on iPhone and iPad it is kept in the
+  Keychain and survives a reinstall),</li>
+  <li>the platform, the app version, the system version and the kind of device (on iPhone and iPad only
+  "iPhone" or "iPad"; on Android the manufacturer and model, the package name and a build stamp),</li>
+  <li>a random secret that proves later requests come from the same install, and, where the build and the
+  device support it, a proof from Apple or Google that the app is genuine.</li>
+</ul>
+<p>This does not depend on the telemetry switch. The app then checks at start, every 30 minutes and when you
+return to it whether this install may use the online features.</p>
+
+<p><strong>Linking to your NOVA account.</strong> A NOVA account is made on the NOVA NETWORK website (with
+Discord sign-in or an access pass), not in the app. LINK ACCOUNT in the app shows a code you enter on the
+website; after that the install is tied to your account and the app shows your account name. From then on
+everything below that the install sends is linked to your account.</p>
+
+<p><strong>Race results and ghosts.</strong> While UPLOAD RACES is on (it is on by default; OPTION, PRIVACY, or
+the ONLINE panel), each finished time attack run uploads the mode, course, car and its settings, the total and
+section times, top speed, the name on your save, the app build, the platform, the time of the race, the install
+id, and the recording of the run's inputs (the ghost) so others can race against it. Story, 10-in-a-row and
+versus results upload the mode, car, the result and the name on your save, without a recording. Results and the
+save's name are shown on the public leaderboards unless you choose Private in your garage on the website.
+Turning UPLOAD RACES off stops these uploads.</p>
+
+<p><strong>Cloud saves.</strong> When your save changes, a copy (your garage, cars, tuning, progress, records and
+the name on the save) is stored with your account so you can restore it with RESTORE FROM CLOUD.</p>
+
+<p><strong>Country.</strong> When a result is uploaded, NOVA NETWORK looks up the country of the network address
+it came from in a local database, stores the two-letter country code with that result and discards the address.
+Nothing finer than the country is kept: no city, no coordinates. The country is shown as a flag beside your
+results and is used for regional leaderboards, regional ghosts and regional statistics. The app itself never
+reads your location.</p>
+
+<p><strong>Ghosts, online versus and game data.</strong> Fetching ghosts to race, the list of relay servers, and
+game data or language downloads send the install's token and what you asked for (course, zone, data set).
+NOVA NETWORK keeps a record of which data set was downloaded and how many files and bytes, without the network
+address. In online versus the relay server you play through receives your player name, your car, the race
+positions, connection quality numbers and your network address for the length of the match; the list of open
+rooms, with the players' names, is kept only while a room is open and for about 5 minutes after.</p>
+
+<p><strong>Updates.</strong> Before you play, the app asks for game patches with only the platform and build
+number.</p>
+
+<p><strong>Optional telemetry (only after your yes).</strong> At the first start the app asks whether to share
+telemetry; the answer can be changed at any time under OPTION, then PRIVACY, then TELEMETRY. Telemetry is off
+until you say yes. With it on, the app also sends:</p>
+<ul>
+  <li>a session start each time you play,</li>
+  <li>after each finished race, how smoothly it ran: the frame rate setting, the number of frames, frame-time
+  buckets and the mean and worst frame time,</li>
+  <li>on Android only, crash reports (where the app stopped and a short technical message). The iPhone and
+  iPad app sends no crash reports.</li>
+</ul>
+<p>Your answer is sent to NOVA NETWORK so it can honour it. Saying no, or switching telemetry off later,
+deletes the session, frame time and crash data that install sent before. Until you link the app these carry
+only the install id; once linked they are tied to your account.</p>
+
+<p><strong>What Fileora never sends:</strong> your contacts, photos, videos, audio, messages, precise location,
+email address, real name, the advertising identifier, browsing or search history, or anything from other
+apps. Race clips on the website are made by the server from the uploaded run recording, not uploaded from your
+device.</p>
+
+<h2>Data types, as declared on the App Store</h2>
+<p>All of the following applies only in NOVA NETWORK mode. All of it is linked to you (to the install, and to
+your account once linked). None of it is used for tracking.</p>
+<div class="wrap">
+<table>
+  <tr><th>Data type</th><th>What it is</th><th>Used for</th></tr>
+  <tr><td>Coarse Location</td><td>the country derived from the network address of an uploaded result</td><td>App functionality, analytics</td></tr>
+  <tr><td>Gameplay Content</td><td>race results, ghosts (run recordings), cloud saves, versus results</td><td>App functionality, analytics</td></tr>
+  <tr><td>User ID</td><td>your NOVA account and the name on your save</td><td>App functionality</td></tr>
+  <tr><td>Device ID</td><td>the random install id (and, where used, the genuine-app device key)</td><td>App functionality, analytics</td></tr>
+  <tr><td>Product Interaction</td><td>session starts (telemetry on only)</td><td>Analytics</td></tr>
+  <tr><td>Performance Data</td><td>frame times per race (telemetry on only)</td><td>Analytics</td></tr>
+  <tr><td>Other Diagnostic Data</td><td>app version, system version, kind of device, the genuine-app check result</td><td>App functionality, analytics</td></tr>
+</table>
+</div>
+<p>"App functionality" means leaderboards, ghosts, cloud saves, the account link, sign-in of the install and
+preventing cheating and abuse. "Analytics" means counts such as races, sessions and devices per day, per app
+version or per region, used to run and improve the game. Nothing is used for advertising or marketing, and
+nothing changes what you see based on this data.</p>
+
+<h2>No tracking, no advertising, no sharing</h2>
+<p>Fileora contains no advertising, no analytics or advertising SDK and no third-party SDK of any kind. It does
+not read the advertising identifier and does not track you across other companies' apps or websites. Your data
+is not sold, and it is not given to any other company for its own use. The country lookup uses a database file on
+NOVA NETWORK's own server, not an outside service. Discord is used only for signing in on the NOVA NETWORK
+website, not by the app.</p>
+<p>Apple and Google may separately collect crash and usage reports from people who choose to share them with app
+developers through their device settings; that is governed by Apple's and Google's own policies, and the app
+does not send those reports.</p>
+
+<h2>How long data is kept</h2>
+<ul>
+  <li>Session starts and frame times: 90 days, or until you switch telemetry off (then at once).</li>
+  <li>Android crash reports: 120 days, or until you switch telemetry off.</li>
+  <li>Genuine-app proofs: 30 days; security records made from them: 180 days.</li>
+  <li>Online versus room list: while the room is open and about 5 minutes after.</li>
+  <li>The install's registration, race results, ghosts, cloud saves (up to 20 earlier copies per save), linked
+  devices and the game data download record: until you delete your account or the install's data.</li>
+</ul>
+
+<h2>Deleting your data</h2>
+<p>In the app: OPTION, then PRIVACY, then DELETE NOVA ACCOUNT, then DELETE and CONFIRM. The row says what is
+deleted (cloud saves, uploads, device links). The same deletion is available on the NOVA NETWORK website at
+<a href="https://nova-net.work/account/delete">nova-net.work/account/delete</a>.</p>
+<ul>
+  <li><strong>A linked install</strong> schedules the deletion of your NOVA account. The app shows the number of
+  days during which you can still restore it before you confirm, and the date of deletion afterwards. Until then
+  you can undo it with RESTORE in the app or on the website; signing in or linking again does not cancel it.</li>
+  <li><strong>When the deletion runs</strong>, your account, linked devices, cloud saves, clips, telemetry,
+  security records and download records are erased. Your leaderboard times and their ghosts stay on the boards
+  without your name, account or country, unless you turn on ALSO REMOVE MY TIMES FROM THE LEADERBOARDS
+  (off by default) before confirming, in which case they are removed too.</li>
+  <li><strong>An install that was never linked</strong> has no account: the same button erases that install's
+  data at once.</li>
+</ul>
+<p>Uninstalling the app does not delete data already sent; use the button above. In your-own-data mode there is
+nothing to delete, so the row is not shown.</p>
+
+<h2>Permissions</h2>
+<p>Local Network and Bluetooth access, if requested, are used only to find and connect to nearby devices for
+versus and to download data from an address on your own network. Fileora does not ask for location, contacts,
+photos, camera or microphone access.</p>
+
+<h2>Children</h2>
+<p>NOVA NETWORK accounts are for people aged 13 and over; the account sign-up on the website checks this.
+Fileora does not knowingly collect personal data from children under 13. In your-own-data mode it collects
+nothing from anyone. If you believe a child under 13 has linked the app to an account, contact us and we will
+delete the data.</p>
+
+<h2>Security</h2>
+<p>Everything Fileora sends to NOVA NETWORK goes over encrypted connections (HTTPS). Online versus traffic goes
+through the relay server for the length of the match.</p>
+
+<h2>Changes to this policy</h2>
+<p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+
+<h2>Contact</h2>
+<p>Questions or requests about this policy, including access to or correction of your data, can be raised on the
+<a href="https://github.com/0x52444C/fileora/issues">Fileora issues page on GitHub</a>. Please do not post
+personal details in a public issue; say what you need and we will reply there.</p>
+
+<p>See also <a href="support.html">Fileora Support</a>.</p>
 </body>
 </html>
